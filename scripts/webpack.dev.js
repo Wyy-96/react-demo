@@ -12,9 +12,9 @@ module.exports = merge(baseConfig, {
     open: false, // 自动打开浏览器
     historyApiFallback: true, // 解决启动后刷新404
     proxy: {
-        '/api': {
-            target: 'http://localhost:3000',
-            pathRewrite: {'^/api' : ''},
+        '/wyy': {
+            target: 'http://158.1.6.145:9080',
+            pathRewrite: {'' : ''},
             changeOrigin: true,
             secure: false
         }
